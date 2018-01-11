@@ -1,4 +1,7 @@
-word = input('Enter a word ')
+#This program turns a sentence to a camel case
+
+
+word = input('Enter a sentence ')
 accumulator = ""
 
 word_list = word.split()
@@ -14,11 +17,7 @@ for x in range(len( word_list)):
         the_word = first_letter + other_letters
 
         accumulator = accumulator + the_word
-
-
-
-
-
-
+if accumulator[0].isdigit():
+    print('Wrong variable name.')
 
 print(accumulator)
